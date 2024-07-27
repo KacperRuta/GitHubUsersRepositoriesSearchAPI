@@ -25,6 +25,11 @@ Fetches repositories for the given GitHub username.
 - **404 Not Found**: If the user does not exist or no repositories are found.
 - **406 Not Acceptable**: If the `Accept` header is not `application/json`.
 
+## Requirements
+
+- Java 17 lub nowsza
+- Maven
+
 ## Configuration
 
 Set the GitHub API URL in `application.properties`:
