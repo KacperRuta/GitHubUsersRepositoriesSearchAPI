@@ -27,7 +27,7 @@ Fetches repositories for the given GitHub username.
 
 ## Requirements
 
-- Java 17 lub nowsza
+- Java 21
 - Maven
 
 ## Configuration
