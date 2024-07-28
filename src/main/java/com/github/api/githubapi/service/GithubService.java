@@ -29,8 +29,7 @@ public class GithubService {
             }
 
             return Arrays.stream(repos)
-                    .filter(repo -> !repo.isFork())
-                    .map(repo -> {
+                    .filter(repo -> !repo.isFork()).map(repo -> {
                         List<GithubBranch> branches = getBranches(username, repo.getName());
                         repo.setBranches(branches);
                         return repo;

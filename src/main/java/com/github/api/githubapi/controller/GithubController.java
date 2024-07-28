@@ -25,7 +25,8 @@ public class GithubController {
 
         if (!"application/json".equals(acceptHeader)) {
             return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE)
-                    .body(new ErrorResponse(HttpStatus.NOT_ACCEPTABLE.value(), "Accept header must be application/json"));
+                    .body(new ErrorResponse(HttpStatus.NOT_ACCEPTABLE.value(),
+                            "Accept header must be application/json"));
         }
 
         try {
